@@ -17,7 +17,7 @@
     <table class="table table-status">
         <thead>
             <tr class="status">
-               <th class="cor">Equipe de suporte:</th>
+               <th class="cor">Correção CST</th>
             </tr>
         </thead>
   </table>
@@ -29,16 +29,28 @@
     <table class="table">
         <thead>
             <tr class="cliente">
-               <th class="cor">Adalto</th>
-               <th class="cor">Christopher</th>
-               <th class="cor">Christian</th>
-               <th class="cor">Lilian</th>
-               <th class="cor">Matheus</th>
-               <th class="cor">Danilo</th>
-               <th class="cor">Clareliz</th>
-               <th class="cor">Daniele</th>
-               <th class="cor">Gabriel</th>
-               <th class="cor">Raphael</th>
+               <th class="cor">
+                <br>
+                <br>
+                select ID_CEST_NCM,CLASSIF_FISCAL,* from produtos where produto in ('PI4979Y') 
+                <br>
+                <br>
+                <br>
+                <br>
+                --ncm do PI3457Y, tem cest mas, se não tivesse...        
+                select ID_CEST_NCM, * from CADASTRO_ITEM_FISCAL where CLASSIF_FISCAL = '42029200' and ID_CEST_NCM is not null 
+                <br>
+                <br>
+                <br>
+                <br>             
+                update produtos 
+                set ID_CEST_NCM = '530', DATA_PARA_TRANSFERENCIA = getdate()
+                where produto = 'PI4979Y'
+                <br>
+                <br>
+
+
+                             
             </tr>
         </thead>
 

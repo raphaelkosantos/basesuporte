@@ -12,9 +12,10 @@
   }
   
   .table {
-      border: 1px solid rgb(31, 29, 29);
+      border: 1px solid rgb(250, 247, 247);
       width: 50% !important; /*Importante manter o !important rs */
       margin: auto;
+      color: #fffefe;
       
   }
   
@@ -27,11 +28,11 @@
 
 body{
   min-height: 100vh;
-  background: radial-gradient(610px at 5.2% 51.6%, rgb(65, 65, 191) 0%, rgb(84, 84, 206) 97.5%);
+  background: radial-gradient(610px at 5.2% 51.6%, rgb(4, 4, 83) 0%, rgb(4, 4, 83) 97.5%);
 }
 
 .side-bar{
-  background: rgba(255,255,255 , 0.1);
+  background: rgba(245, 241, 241, 0.1);
   backdrop-filter:blur(15px);
   width: 290px;
   height: 100vh;
@@ -58,7 +59,7 @@ body{
 }
 
 .side-bar .menu .item a{
-  color: #131212;
+  color: #fcfafa;
   font-size: 16px;
   text-decoration: none;
   display: block;
@@ -99,7 +100,7 @@ body{
 
 .close-btn{
   position: absolute;
-  color: #141313;
+  color: #fffefe;
   font-size: 20px;
   right: 0;
   margin: 25px;
@@ -109,7 +110,7 @@ body{
 
 .menu-btn{
   position: absolute;
-  color: #131212;
+  color: #faf8f8;
   font-size: 20px;
   margin: 25px;
   cursor:pointer;

@@ -17,7 +17,7 @@
     <table class="table table-status">
         <thead>
             <tr class="status">
-               <th class="cor">Equipe de suporte:</th>
+               <th class="cor">Correção CST</th>
             </tr>
         </thead>
   </table>
@@ -29,16 +29,30 @@
     <table class="table">
         <thead>
             <tr class="cliente">
-               <th class="cor">Adalto</th>
-               <th class="cor">Christopher</th>
-               <th class="cor">Christian</th>
-               <th class="cor">Lilian</th>
-               <th class="cor">Matheus</th>
-               <th class="cor">Danilo</th>
-               <th class="cor">Clareliz</th>
-               <th class="cor">Daniele</th>
-               <th class="cor">Gabriel</th>
-               <th class="cor">Raphael</th>
+               <th class="cor">
+                <br>
+                <br>
+                select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+                where cod_filial='000490' and produto in ('cs1379')
+                <br>
+                <br>
+                <br>
+               select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+               where cod_filial='000490' and produto in ('cs1935','cs1935','pi4647y')
+               <br>
+               <br>
+               <br>
+               UPDATE CTB_EXCECAO_IMPOSTO 
+               SET TRIBUT_ICMS = '00'
+               WHERE CFOP_OBRIGATORIO = '5102'
+               AND produto in ('CS2059')
+               AND COD_FILIAL = '000490'
+                <br>
+                <br>
+                <br>
+
+
+                             
             </tr>
         </thead>
 

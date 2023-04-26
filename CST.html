@@ -17,7 +17,7 @@
     <table class="table table-status">
         <thead>
             <tr class="status">
-               <th class="cor">Equipe de suporte:</th>
+               <th class="cor">Correção CST</th>
             </tr>
         </thead>
   </table>
@@ -29,16 +29,24 @@
     <table class="table">
         <thead>
             <tr class="cliente">
-               <th class="cor">Adalto</th>
-               <th class="cor">Christopher</th>
-               <th class="cor">Christian</th>
-               <th class="cor">Lilian</th>
-               <th class="cor">Matheus</th>
-               <th class="cor">Danilo</th>
-               <th class="cor">Clareliz</th>
-               <th class="cor">Daniele</th>
-               <th class="cor">Gabriel</th>
-               <th class="cor">Raphael</th>
+               <th class="cor">
+                <br>
+                <br>
+                select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+                where cod_filial='000172' and produto in ('pi5614y')
+                <br>
+                <br>
+                <br>
+                <br>
+                UPDATE dbo.CTB_EXCECAO_IMPOSTO
+                SET DATA_PARA_TRANSFERENCIA = GETDATE()
+                WHERE COD_FILIAL ='000373'
+                AND PRODUTO in ('cs1963','cs1964','pi4224y','cs1379')
+                <br>
+                <br>
+
+
+                             
             </tr>
         </thead>
 
