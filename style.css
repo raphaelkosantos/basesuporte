@@ -7,13 +7,6 @@
 
 
 
-
-
-
-
-
-
-
 .table-responsive{
     width: 100% !important;
   }
@@ -34,7 +27,7 @@
 
 body{
   min-height: 100vh;
-  background: radial-gradient(610px at 5.2% 51.6%, rgb(232, 232, 241) 0%, rgb(242, 242, 247) 97.5%);
+  background: radial-gradient(610px at 5.2% 51.6%, rgb(65, 65, 191) 0%, rgb(84, 84, 206) 97.5%);
 }
 
 .side-bar{
