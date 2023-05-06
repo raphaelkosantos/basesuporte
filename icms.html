@@ -17,7 +17,7 @@
     <table class="table table-status">
         <thead>
             <tr class="status">
-               <th class="cor">Correção ICMS</th>
+               <th class="cor"><h2>Correção ICMS</h2></th>
             </tr>
         </thead>
   </table>
@@ -32,17 +32,17 @@
                <th class="cor">
                 <br>
                 <br>
-                select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+               select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
                 where cod_filial='000490' and produto in ('cs1379')
                 <br>
                 <br>
                 <br>
-               select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+               DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
                where cod_filial='000490' and produto in ('cs1935','cs1935','pi4647y')
                <br>
                <br>
                <br>
-               UPDATE CTB_EXCECAO_IMPOSTO 
+                UPDATE CTB_EXCECAO_IMPOSTO 
                SET TRIBUT_ICMS = '00'
                WHERE CFOP_OBRIGATORIO = '5102'
                AND produto in ('CS2059')
@@ -51,7 +51,7 @@
                 <br>
                 <br>
 
-
+                <img src="img\cst.jpg" alt="some text" width=700 height=550>
                              
             </tr>
         </thead>
