@@ -12,26 +12,9 @@
   <title>CST</title>
 </head>
 <body>
-  
-  <br>
-        <br>
-        select ID_CEST_NCM,CLASSIF_FISCAL,* from produtos where produto in ('PI4979Y') 
-        <br>
-        <br>
-        <br>
-        <br>
-        --ncm do PI3457Y, tem cest mas, se não tivesse...        
-        select ID_CEST_NCM, * from CADASTRO_ITEM_FISCAL where CLASSIF_FISCAL = '42029200' and ID_CEST_NCM is not null 
-        <br>
-        <br>
-        <br>
-        <br>             
-        update produtos 
-        set ID_CEST_NCM = '530', DATA_PARA_TRANSFERENCIA = getdate()
-        where produto = 'PI4979Y'
-        <br>
-        <br>
 
+
+ 
 
 <div class="container">
 <div class="table-responsive">
@@ -52,11 +35,6 @@
           </div>
           <div class="menu">
 
-
-
-
-
-
             <div class="box-busca">
               <div class="search-box">
                   
@@ -69,6 +47,9 @@
               </div><!-- Search -->
           
           </div><!--Box Busca-->
+
+
+          
 
            
             <br>
@@ -113,6 +94,44 @@
         </div>
 
       </nav>
+
+
+      <br>
+      <br>
+
+      <center><p><h1>Erro CST</h1></p></center>
+  
+  
+      <center>
+
+        <br>
+        <br>
+
+        
+        <h4>select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+          where cod_filial='000172' and produto in ('pi5614y')</h4> 
+        
+        <br>
+        <br>
+        
+        <h4>
+          UPDATE dbo.CTB_EXCECAO_IMPOSTO
+          SET DATA_PARA_TRANSFERENCIA = GETDATE()
+          WHERE COD_FILIAL ='000373'
+          AND PRODUTO in ('cs1963','cs1964','pi4224y','cs1379')
+
+        </h4>
+        
+
+        <br>
+        <br>
+        
+        <img src="img\cst.jpg" alt="some text" width=700 height=550>
+      
+      </center>
+
+
+
     </header>
 
 
