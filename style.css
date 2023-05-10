@@ -1,3 +1,19 @@
+
+.header {
+  background: #1d1e20;
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+
 *{
   margin:0;
   padding:0;
@@ -5,13 +21,101 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*barra de pesquisa */
+
+
+
+.search-box-input::placeholder {
+  
+  color:#ffffff;
+  opacity: 0.6;
+}
+/* Chrome, Opera ySafari */
+.search-box-input::-webkit-input-placeholder { color: #ffffff; }
+/* Firefox 19+ */
+.search-box-input::-moz-placeholder { color: #ffffff; }
+/* IE 10+ y Edge */
+.search-box-input:-ms-input-placeholder { color: #ffffff; }
+.search-box form {
+  
+  display: flex;
+  border-radius: 50px;
+  background-color: #4c4c4c;
+  height: 45px;
+}
+.search-box:hover .search-box-input {
+  
+  padding-left: 2em;
+  padding-right: 1em;
+  width: 250px;
+}
+.search-box-input {
+  outline: 0;
+  font-size: 1.2em;
+  color: #fff;
+  width: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  transition: .45s;
+}
+
+.search-box-button:active  {
+  transform: scale(.85);
+}
+.search-box-icone {
+  margin: auto;
+  color: #fff;
+}
+@media screen and (min-width: 400px){
+  
+  .search-box:hover .search-box-input {
+      width: 360px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-responsive{
+    width: 100% !important;
+  }
+  
+  .table {
+      border: 1px solid rgb(255, 255, 255);
+      width: 50% !important; /*Importante manter o !important rs */
+      margin: auto;
+      color: #0a0a0a;
+      
+  }
+  
+  .table-status {
+      margin-top: 20px;
+      margin-bottom: 20px !important;
+  }
+
+
+
 body{
   min-height: 100vh;
-  background: radial-gradient(610px at 5.2% 51.6%, rgb(5, 8, 114) 0%, rgb(7, 3, 53) 97.5%);
+  background: radial-gradient(610px at 5.2% 51.6%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 97.5%);
 }
 
 .side-bar{
-  background: rgba(255,255,255 , 0.1);
+  background: rgba(36, 35, 35, 0.938);
   backdrop-filter:blur(15px);
   width: 290px;
   height: 100vh;
@@ -38,7 +142,7 @@ body{
 }
 
 .side-bar .menu .item a{
-  color: #fff;
+  color: #FFFFFF;
   font-size: 16px;
   text-decoration: none;
   display: block;
@@ -47,7 +151,7 @@ body{
 }
 
 .side-bar .menu .item a:hover{
-  background: #8621F8;
+  background: #787879;
   transition: 0.3s ease;
 
 }
@@ -79,7 +183,7 @@ body{
 
 .close-btn{
   position: absolute;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 20px;
   right: 0;
   margin: 25px;
@@ -89,8 +193,18 @@ body{
 
 .menu-btn{
   position: absolute;
-  color: #fff;
+  color: #0a0a0a;
   font-size: 20px;
   margin: 25px;
   cursor:pointer;
 }
+
+
+
+
+
+
+
+
+
+
