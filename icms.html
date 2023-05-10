@@ -9,61 +9,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>ICMS</title>
+  <title>Index</title>
 </head>
 <body>
 
+  
 
-    <table class="table table-status">
-        <thead>
-            <tr class="status">
-               <th class="cor"><h2>Correção ICMS</h2></th>
-            </tr>
-        </thead>
-  </table>
-</div>
-</div>
 
 <div class="container">
 <div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr class="cliente">
-               <th class="cor">
-                <br>
-                <br>
-               select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
-                where cod_filial='000490' and produto in ('cs1379')
-                <br>
-                <br>
-                <br>
-               DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
-               where cod_filial='000490' and produto in ('cs1935','cs1935','pi4647y')
-               <br>
-               <br>
-               <br>
-                UPDATE CTB_EXCECAO_IMPOSTO 
-               SET TRIBUT_ICMS = '00'
-               WHERE CFOP_OBRIGATORIO = '5102'
-               AND produto in ('CS2059')
-               AND COD_FILIAL = '000490'
-                <br>
-                <br>
-                <br>
 
-                <img src="img\cst.jpg" alt="some text" width=700 height=550>
-                             
-            </tr>
-        </thead>
-
-        
-  </table>
-
- 
-
-
-
-    <header>
+      <header>
       <nav>
 
         <div class="menu-btn">
@@ -74,6 +30,10 @@
             <i class="fas fa-times"></i>
           </div>
           <div class="menu">
+
+
+
+
 
 
             <div class="box-busca">
@@ -88,16 +48,16 @@
               </div><!-- Search -->
           
           </div><!--Box Busca-->
-        
-              <br>
 
+           
+            <br>
             <div class="item"><a href="index.html"><i class="fas fa-desktop"></i>Suporte</a></div>
             <div class="item">
               <a class="sub-btn"><i class="fas fa-table"></i>Imaginarium<i class="fas fa-angle-right dropdown"></i></a>
               <div class="sub-menu">
                 <a href="cst.html" class="sub-item">CST</a>
                 <a href="cest.html" class="sub-item">Cest</a>
-                <a href="icms.html" class="sub-item">ICMS</a>
+                <a href="icms.html" class="sub-item">ICMS</a>                
                 <a href="inventario.html" class="sub-item">Inventário Loja</a>
                 <a href="instalacaosistema.html" class="sub-item">Instalação do sistema</a>
                 <a href="instalacaosat.html" class="sub-item">Instalação de SAT</a>
@@ -132,6 +92,47 @@
         </div>
 
       </nav>
+
+
+      <center>
+        <br>
+        <br>
+        <br>
+
+        <h1>Erro de Cest</h1> 
+
+        <br>
+        <br>
+
+        
+        <h4>select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+          where cod_filial='000490' and produto in ('cs1379')</h4> 
+        
+        <br>
+        <br>
+        
+        <h4>
+          select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+          where cod_filial='000490' and produto in ('cs1935','cs1935','pi4647y')
+
+        </h4>
+        <br>
+        <br>
+        
+        <h4>
+          UPDATE CTB_EXCECAO_IMPOSTO 
+   SET TRIBUT_ICMS = '00'
+   WHERE CFOP_OBRIGATORIO = '5102'
+   AND produto in ('CS2059')
+   AND COD_FILIAL = '000490'
+        
+
+        <br>
+        <br>
+        
+      
+      
+      </center>
     </header>
 
 
