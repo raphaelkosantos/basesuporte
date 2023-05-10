@@ -9,23 +9,38 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>Sobre</title>
+  <title>CST</title>
 </head>
 <body>
   
-
-
-
-  
-
-
-
+  <br>
+        <br>
+        select ID_CEST_NCM,CLASSIF_FISCAL,* from produtos where produto in ('PI4979Y') 
+        <br>
+        <br>
+        <br>
+        <br>
+        --ncm do PI3457Y, tem cest mas, se não tivesse...        
+        select ID_CEST_NCM, * from CADASTRO_ITEM_FISCAL where CLASSIF_FISCAL = '42029200' and ID_CEST_NCM is not null 
+        <br>
+        <br>
+        <br>
+        <br>             
+        update produtos 
+        set ID_CEST_NCM = '530', DATA_PARA_TRANSFERENCIA = getdate()
+        where produto = 'PI4979Y'
+        <br>
+        <br>
 
 
 <div class="container">
 <div class="table-responsive">
 
       <header>
+
+      
+
+
       <nav>
 
         <div class="menu-btn">
