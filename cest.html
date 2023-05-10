@@ -13,55 +13,13 @@
 </head>
 <body>
 
+  
 
-    <table class="table table-status">
-        <thead>
-            <tr class="status">
-               <th class="cor"><h2>Correção Cest</h2></th>
-            </tr>
-        </thead>
-  </table>
-</div>
-</div>
 
 <div class="container">
 <div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr class="cliente">
-               <th class="cor">
-                <br>
-                <br>
-                select ID_CEST_NCM,CLASSIF_FISCAL,* from produtos where produto in ('PI4979Y') 
-                <br>
-                <br>
-                <br>
-                <br>
-                --ncm do PI3457Y, tem cest mas, se não tivesse...        
-                select ID_CEST_NCM, * from CADASTRO_ITEM_FISCAL where CLASSIF_FISCAL = '42029200' and ID_CEST_NCM is not null 
-                <br>
-                <br>
-                <br>
-                <br>             
-                update produtos 
-                set ID_CEST_NCM = '530', DATA_PARA_TRANSFERENCIA = getdate()
-                where produto = 'PI4979Y'
-                <br>
-                <br>
 
-                <img src="img\cest.jpg" alt="some text" width=700 height=550>
-                             
-            </tr>
-        </thead>
-
-        
-  </table>
-
- 
-
-
-
-    <header>
+      <header>
       <nav>
 
         <div class="menu-btn">
@@ -72,6 +30,9 @@
             <i class="fas fa-times"></i>
           </div>
           <div class="menu">
+
+
+
 
 
 
@@ -87,17 +48,16 @@
               </div><!-- Search -->
           
           </div><!--Box Busca-->
-        
-              <br>
 
-
+           
+            <br>
             <div class="item"><a href="index.html"><i class="fas fa-desktop"></i>Suporte</a></div>
             <div class="item">
               <a class="sub-btn"><i class="fas fa-table"></i>Imaginarium<i class="fas fa-angle-right dropdown"></i></a>
               <div class="sub-menu">
                 <a href="cst.html" class="sub-item">CST</a>
                 <a href="cest.html" class="sub-item">Cest</a>
-                <a href="icms.html" class="sub-item">ICMS</a>
+                <a href="icms.html" class="sub-item">ICMS</a>                
                 <a href="inventario.html" class="sub-item">Inventário Loja</a>
                 <a href="instalacaosistema.html" class="sub-item">Instalação do sistema</a>
                 <a href="instalacaosat.html" class="sub-item">Instalação de SAT</a>
@@ -132,6 +92,44 @@
         </div>
 
       </nav>
+
+      <center>
+        <br>
+        <br>
+        <br>
+
+        <h1>Erro de Cest</h1> 
+
+        <br>
+        <br>
+
+        
+        <h4>select ID_CEST_NCM,CLASSIF_FISCAL,* from produtos where produto in ('PI4979Y')</h4> 
+        
+        <br>
+        <br>
+        
+        <h4>
+          --ncm do PI3457Y, tem cest mas, se não tivesse...        
+select ID_CEST_NCM, * from CADASTRO_ITEM_FISCAL where CLASSIF_FISCAL = '42029200' and ID_CEST_NCM is not null
+
+        </h4>
+        <br>
+        <br>
+        
+        <h4>
+          update produtos 
+set ID_CEST_NCM = '530', DATA_PARA_TRANSFERENCIA = getdate()
+where produto = 'PI4979Y'
+        
+
+        <br>
+        <br>
+        
+      
+      
+      </center>
+      
     </header>
 
 
