@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,40 +108,38 @@
 
       <center>
 
-        <label> <h1>Erro de CST</h1> </label>
+<p>
+<p>
+<p>
+<p>
 
-        <textarea name="campo_a" rows="20" cols="100" class="campo_a">
 
-          select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+        <div class="card text-bg-dark mb-3" style="max-width: 35rem;">
+          <div class="card-header">Erro de CST</div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">
+              
+              select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
           where cod_filial='000172' and produto in ('pi5614y')
         
-    
+          <p>
+            <p>
+            <p>
+            <p>
+              
         
         
           UPDATE dbo.CTB_EXCECAO_IMPOSTO
           SET DATA_PARA_TRANSFERENCIA = GETDATE()
           WHERE COD_FILIAL ='000373'
           AND PRODUTO in ('cs1963','cs1964','pi4224y','cs1379')
-       
-        
-        </textarea><br><br>
-        
-        <button type="button" class="copiar">copiar</button><br><br>
-        
-        <script>
-        
-        const btnCopiar = document.querySelector('.copiar');
-        const textAreaCampoA = document.querySelector('.camp_a');
-        
-        btnCopiar.addEventListener('click', (e) => {
-         // e.preventDefault();
-          //console.log(textAreaCampoA.value);
-       navigator.clipboard.writeText(textAreaCampoA.value);
-        
-        
-        }) 
-  
-        </script>
+              
+              
+              
+              
+            </p>
+          </div>
 
 
         </center>
