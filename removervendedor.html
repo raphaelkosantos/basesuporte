@@ -106,27 +106,27 @@
         <h2>Consultar vendedor</h2> 
         <br>
         <br> 
-         select * from LOJA_VENDEDORES
+        <h4>select * from LOJA_VENDEDORES
          where CODIGO_FILIAL = '000442'
-         and VENDEDOR = '1DC9'  
+         and VENDEDOR = '1DC9'</h4>  
         <br>
         <br> 
         <h2>Desativar vendedor</h2> 
         <br>
         <br> 
-         update LOJA_VENDEDORES
+        <h4>update LOJA_VENDEDORES
          set data_desativacao = getdate () -1 
          where CODIGO_FILIAL = '000125'
-         and VENDEDOR = '35D4'
+         and VENDEDOR = '35D4'</h4> 
         <br>
         <br> 
         <h2>Ativar vendedor</h2> 
         <br>
         <br>
-        update LOJA_VENDEDORES
+        <h4>update LOJA_VENDEDORES
         set data_ativacao = null
         where CODIGO_FILIAL = '000125'
-        and VENDEDOR = '31FD'     
+        and VENDEDOR = '31FD' </h4>     
         <br>
         <br>
         
