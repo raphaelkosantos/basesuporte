@@ -9,20 +9,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>Remover Vendedor</title>
+  <title>CST</title>
 </head>
 <body>
+
+  
 
 
 <div class="container">
 <div class="table-responsive">
-    
 
- 
-
-
-
-    <header>
+      <header>
       <nav>
 
         <div class="menu-btn">
@@ -33,6 +30,8 @@
             <i class="fas fa-times"></i>
           </div>
           <div class="menu">
+
+
 
 
 
@@ -49,11 +48,9 @@
               </div><!-- Search -->
           
           </div><!--Box Busca-->
-        
-              <br>
-              <br>
-              
 
+           
+            <br>
             <div class="item"><a href="index.html"><i class="fas fa-desktop"></i>Suporte</a></div>
             <div class="item">
               <a class="sub-btn"><i class="fas fa-table"></i>Imaginarium<i class="fas fa-angle-right dropdown"></i></a>
@@ -99,6 +96,44 @@
         </div>
 
       </nav>
+
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Consultar vendedor</h2> 
+        <br>
+        <br> 
+         select * from LOJA_VENDEDORES
+         where CODIGO_FILIAL = '000442'
+         and VENDEDOR = '1DC9'  
+        <br>
+        <br> 
+        <h2>Desativar vendedor</h2> 
+        <br>
+        <br> 
+         update LOJA_VENDEDORES
+         set data_desativacao = getdate () -1 
+         where CODIGO_FILIAL = '000125'
+         and VENDEDOR = '35D4'
+        <br>
+        <br> 
+        <h2>Ativar vendedor</h2> 
+        <br>
+        <br>
+        update LOJA_VENDEDORES
+        set data_ativacao = null
+        where CODIGO_FILIAL = '000125'
+        and VENDEDOR = '31FD'     
+        <br>
+        <br>
+        
+      
+      
+      </center>
+      
     </header>
 
 
