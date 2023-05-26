@@ -7,13 +7,6 @@
 
 
 
-
-
-
-
-
-
-
 *{
   margin:0;
   padding:0;
@@ -60,6 +53,8 @@
   transition: .45s;
 }
 
+
+
 .search-box-button:active  {
   transform: scale(.85);
 }
@@ -73,20 +68,6 @@
       width: 360px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -112,6 +93,7 @@
 body{
   min-height: 100vh;
   background: radial-gradient(610px at 5.2% 51.6%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 97.5%);
+
 }
 
 .side-bar{
