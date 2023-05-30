@@ -109,41 +109,36 @@
       </div>
 
       </nav>
+      <br>
+      <br>
 
       <center>
 
-<p>
-<p>
-<p>
-<p>
+
+  <!-- Criar o campo A com o texto que deve ser copiado -->
+    
+  <textarea name="campo_a" rows="15" cols="70" class="campo_a">
+    select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
+    where cod_filial='000172' and produto in ('pi5614y')
 
 
-        <div class="card text-bg-dark mb-3" style="max-width: 35rem;">
-          <div class="card-header">Erro de CST</div>
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">
-              
-              select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
-          where cod_filial='000172' and produto in ('pi5614y')
-        
-          <p>
-            <p>
-            <p>
-            <p>
-              
-        
-        
-          UPDATE dbo.CTB_EXCECAO_IMPOSTO
-          SET DATA_PARA_TRANSFERENCIA = GETDATE()
-          WHERE COD_FILIAL ='000373'
-          AND PRODUTO in ('cs1963','cs1964','pi4224y','cs1379')
-              
-              
-              
-              
-            </p>
-          </div>
+
+    UPDATE dbo.CTB_EXCECAO_IMPOSTO
+    SET DATA_PARA_TRANSFERENCIA = GETDATE()
+    WHERE COD_FILIAL ='000373'
+    AND PRODUTO in ('cs1963','cs1964','pi4224y','cs1379')
+  
+  
+  
+  
+  </textarea><br><br>
+
+  <!-- Botão copiar -->
+  <button type="button" class="copiar">Copiar</button><br><br>
+
+
+
+
 
 
         </center>
@@ -157,24 +152,89 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function(){
 
-          $('.sub-btn').click(function(){
-            $(this).next('.sub-menu').slideToggle();
-            $(this).find('.dropdown').toggleClass('rotate');
-          });
 
-          $('.menu-btn').click(function(){
-            $('.side-bar').addClass('active');
-            $('.menu-btn').css("visibility", "hidden");
-          });
+$(document).ready(function(){
 
-          $('.close-btn').click(function(){
-            $('.side-bar').removeClass('active');
-            $('.menu-btn').css("visibility", "visible");
-          });
+$('.sub-btn').click(function(){
+  $(this).next('.sub-menu').slideToggle();
+  $(this).find('.dropdown').toggleClass('rotate');
+});
 
-        });
+$('.menu-btn').click(function(){
+  $('.side-bar').addClass('active');
+  $('.menu-btn').css("visibility", "hidden");
+});
+
+$('.close-btn').click(function(){
+  $('.side-bar').removeClass('active');
+  $('.menu-btn').css("visibility", "visible");
+});
+
+});
+
+
+// Receber os seletores do HTML com JavaScript
+const btnCopiar = document.querySelector('.copiar');
+      const textAreaCampoA = document.querySelector('.campo_a');
+      const btnColar = document.querySelector('.colar');
+      // Aguardar o click do usuário no botão copiar
+      btnCopiar.addEventListener('click', (e) => {
+          //e.preventDefault();
+          //console.log(textAreaCampoA.value);
+
+          // textAreaCampoA.value = Receber os dados do campo A
+          // A propriedade Clipboard grava a string de texto especificada na área de transferência do sistema.
+          navigator.clipboard.writeText(textAreaCampoA.value);
+
+          // Sweetalert - https://celke.com.br/artigo/como-usar-sweetalert-no-formulario-com-javascript-e-php
+          alert('Texto copiado com sucesso!');
+      });
+
+      // Aguardar o click do usuário no botão colar
+      btnColar.addEventListener('click', async (e) => {
+          //e.preventDefault();
+
+          // Utilizado o readText para ler o conteúdo
+          const resposta = await navigator.clipboard.readText();
+
+          // Enviar o texto para o campo B
+          textAreaCampoB.value = resposta;
+
+          // Sweetalert - https://celke.com.br/artigo/como-usar-sweetalert-no-formulario-com-javascript-e-php
+          alert('Inserir o texto copiado no campo B, clique em ok para inserir o texto!');
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 </body>
