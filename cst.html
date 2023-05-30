@@ -115,9 +115,9 @@
       <center>
 
 
-  <!-- Criar o campo A com o texto que deve ser copiado -->
+  <!-- Area de texto -->
     
-  <textarea name="campo_a" rows="15" cols="70" class="campo_a">
+  <textarea name="campo_a" rows="15" cols="70" class="campo_a" readonly>
     select DESC_EXCECAO, TRIBUT_ICMS, PRODUTO, CFOP_OBRIGATORIO, * from ctb_excecao_imposto 
     where cod_filial='000172' and produto in ('pi5614y')
 
@@ -196,13 +196,7 @@ const btnCopiar = document.querySelector('.copiar');
           //e.preventDefault();
 
           // Utilizado o readText para ler o conteúdo
-          const resposta = await navigator.clipboard.readText();
-
-          // Enviar o texto para o campo B
-          textAreaCampoB.value = resposta;
-
-          // Sweetalert - https://celke.com.br/artigo/como-usar-sweetalert-no-formulario-com-javascript-e-php
-          alert('Inserir o texto copiado no campo B, clique em ok para inserir o texto!');
+          const resposta = await navigator.clipboard.readText();      
       });
 
 
